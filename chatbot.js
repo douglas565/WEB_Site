@@ -152,7 +152,24 @@ function changeLanguage(lang) {
         console.log("Conteúdo do elemento atualizado:", element.innerHTML);
       }
     });
-  }
+    var projectTitles = document.querySelectorAll('.project h3');
+    projectTitles.forEach(title => {
+        const titleId = title.id + '-' + lang;
+        const translatedTitle = translations[titleId];
+        if (translatedTitle) {
+            title.textContent = translatedTitle;
+        }
+    });
+
+    var projectDescriptions = document.querySelectorAll('.project-details p');
+    projectDescriptions.forEach(description => {
+        const descriptionId = description.id + '-' + lang;
+        const translatedDescription = translations[descriptionId];
+        if (translatedDescription) {
+            description.textContent = translatedDescription;
+        }
+    });
+}
 function toggleChatbox() {
     const chatbotContent = document.getElementById('chatbot-content');
     const icon = document.querySelector('.chatbot-header button i');
