@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Currículo - Douglas Ramos Charqueiro</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+              integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+              crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    </head>
+<body>
+    <div class="language-buttons">
+        <button id="pt-br-button" onclick="changeLanguage('pt-BR')">
+            <img src="{{ url_for('static', filename='imag/brasil.png') }}" alt="Bandeira do Brasil" width="30">
+        </button>
+        <button id="en-button" onclick="changeLanguage('en')">
+            <img src="/static/imag/usa_band.webp" alt="{{ url_for('static', filename='imag/usa_band.webp') }}" width="30">
+        </button>
+    </div>
+
+    <div class="container">
+        <div class="profile">
+            <img src="{{ url_for('static', filename='imag/minhaft.jpg') }}" alt="Foto de Douglas Ramos Charqueiro" class="profile-picture">
+            
+            <h1 id="name" class="language-dependent">Douglas Ramos Charqueiro</h1>
+        </div>
+
+        <div class="info">
+            <div class="info-item">
+                <p id="address" class="language-dependent">Endereço: Carvoeira - Florianópolis - SC</p>
+                <p id="phone" class="language-dependent">Telefone: (55) 99189-3927</p>
+                <p id="email" class="language-dependent">E-mail: douglas.ramos@acad.ufsm.br</p>
+            </div>
+
+            <div class="info-item">
+                <div class="quick-links">
+                    <a href="http://www.linkedin.com/in/douglas-ramos-charqueiro-075a87293" target="_blank">
+                        <img src="{{ url_for('static', filename='imag/linkedin.jpeg') }}" alt="Ícone do LinkedIn" id="linkedin-icon">
+                        <span id="linkedin" class="language-dependent">LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/douglas565" target="_blank">
+                        <img src="{{ url_for('static', filename='imag/github2.png') }}" alt="Ícone do GitHub" id="github-icon">
+                        <span id="github" class="language-dependent">GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 id="about-title" class="section-title language-dependent">Sobre</h2>
+            <p id="about-description" class="language-dependent">Sou um profissional de tecnologia com paixão por desenvolvimento de software e
+                aprendizado contínuo. Atualmente trabalho como Técnico em Eletrotécnica na Justiça Federal de Santa
+                Catarina, com foco em automação industrial. Sou graduando em Ciência da Computação pela UNISUL e possuo
+                experiência em diversos projetos de software e hardware. Sou apaixonado por aprender novas tecnologias e
+                aprimorar minhas habilidades para entregar soluções inovadoras e eficientes.</p>
+        </div>
+
+        <div class="chatbot-box">
+            <div class="chatbot-header">
+                <h3 id="chatbot-curriculo" class="language-dependent">Chatbot do Currículo</h3>
+                <button onclick="toggleChatbox()">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+            <div class="chatbot-content" id="chatbot-content">
+                <div class="chatbot-messages" id="chatbot-messages">
+                    <!-- Mensagens do chatbot serão adicionadas aqui -->
+                </div>
+                <input type="text" id="chatbot-input" placeholder="Digite sua pergunta...">
+                <button id="enviar" onclick="sendChat()" class="language-dependent">Enviar</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 id="experience-title" class="section-title language-dependent">Experiência Profissional</h2>
+
+            <div class="experience-item">
+                <h3 id="experience-job-title" class="language-dependent">Técnico em Eletrotécnica</h3>
+                <p id="experience-company" class="language-dependent">Grupo Setup - Florianópolis, SC</p>
+                <p id="experience-date" class="language-dependent">Março de 2024 - Presente</p>
+                <ul>
+                    <li id="experience-description-1" class="language-dependent">Realizo manutenção elétrica no Hospital Universitário Polydoro
+                        Ernani de São Thiago.</li>
+                    <li id="experience-description-2" class="language-dependent">Atuei na área de Automação Industrial, realizando a gestão e
+                        controle do prédio e implementando melhorias no software Envision.</li>
+                    <li id="experience-description-3" class="language-dependent">Experiência prática com sistemas de automação e gerenciamento de
+                        infraestrutura.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3 id="experience2-job-title" class="language-dependent">Estágio em Manutenção Predial e de Computadores</h3>
+                <p id="experience2-company" class="language-dependent">Base Aérea de Santa Maria - Santa Maria, RS</p>
+                <p id="experience2-date" class="language-dependent">2023</p>
+                <ul>
+                    <li id="experience2-description-1" class="language-dependent">Adquiri experiência prática em manutenção de infraestrutura
+                        predial, incluindo sistemas elétricos e hidráulicos, e em equipamentos de informática.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 id="education-title" class="section-title language-dependent">Formação Acadêmica</h2>
+
+            <div class="education-item">
+                <h3 id="education-course-title" class="language-dependent">Ciências da Computação</h3>
+                <p id="education-institution" class="language-dependent">Universidade do Sul de Santa Catarina (UNISUL) - Florianópolis, SC</p>
+                <p id="education-date" class="language-dependent">2024 - Cursando</p>
+            </div>
+
+            <div class="education-item">
+                <h3 id="education2-course-title" class="language-dependent">Sistemas de Informação</h3>
+                <p id="education2-institution" class="language-dependent">Universidade Federal de Santa Maria (UFSM) - Santa Maria, RS</p>
+                <p id="education2-date" class="language-dependent">2023 - Incompleto</p>
+                <p id="education2-project" class="language-dependent">Desenvolvi um projeto de Iniciação Científica sobre Inteligência em
+                    Iluminação para Smart Cities, com foco em transmissão de dados e criptografia.</p>
+            </div>
+
+            <div class="education-item">
+                <h3 id="education3-course-title" class="language-dependent">Técnico em Eletrotécnica</h3>
+                <p id="education3-institution" class="language-dependent">Colégio Técnico Industrial de Santa Maria (CTISM/UFSM) - Santa Maria, RS
+                </p>
+                <p id="education3-date" class="language-dependent">2020-2023</p>
+            </div>
+
+            <div class="education-item">
+                <h3 id="education4-course-title" class="language-dependent">Ensino Fundamental</h3>
+                <p id="education4-institution" class="language-dependent">Colégio Municipal Miguel Beltrame - Santa Maria, RS</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 id="skills-title" class="section-title language-dependent">Habilidades</h2>
+
+            <div class="skills">
+                <div class="skill language-dependent" id="skill-1">Automação Industrial</div>
+                <div class="skill language-dependent" id="skill-2">Manutenção Elétrica</div>
+                <div class="skill language-dependent" id="skill-3">Software Envision</div>
+                <div class="skill language-dependent" id="skill-4">Redes de Computadores</div>
+                <div class="skill language-dependent" id="skill-5">Manutenção de Computadores</div>
+                <div class="skill language-dependent" id="skill-6">HTML</div>
+                <div class="skill language-dependent" id="skill-7">CSS</div>
+                <div class="skill language-dependent" id="skill-8">JavaScript</div>
+                <div class="skill language-dependent" id="skill-9">Python</div>
+                <div class="skill language-dependent" id="skill-10">C</div>
+                <div class="skill language-dependent" id="skill-11">Git</div>
+                <div class="skill language-dependent" id="skill-12">Inglês (Intermediário)</div>
+                <div class="skill language-dependent" id="skill-13">Espanhol (Básico)</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 id="qualifications-title" class="section-title language-dependent">Qualificações</h2>
+            <ul>
+                <li id="qualifications-item-1" class="language-dependent">Domínio em softwares: Pacote Office, Autocad, LogoSoft, FestoFluidSim,
+                    CADESIMU, Visual Studio Code, Envision for BACtalk</li>
+                <li id="qualifications-item-2" class="language-dependent">Formação complementar em áreas como: Circuitos Digitais, Gestão
+                    Industrial e Segurança do Trabalho, Eletrônica, Projetos Elétricos, Desenho Técnico, Tecnologia
+                    Mecânica, Sistemas Elétricos de Potência, Circuitos Elétricos, Projetos Fotovoltaicos, Linguagem
+                    Python, Linguagem C, Linguagem Front-end (HTML e CSS), Teoria Geral da Administração, Programação I,
+                    Circuitos Digitais.</li>
+            </ul>
+        </div>
+
+        <div class="section" id="projects-section">
+            <h2 id="projects-title" class="section-title language-dependent">Projetos</h2>
+
+            <div class="project" id="project-1">
+                <h3 id="project-1-title" class="language-dependent">Projeto 1: Card-Game-dumb-play 🃏</h3>
+                <button id="project-1-button" onclick="toggleProjectDetails('project-1')">
+                    <i class="fas fa-angle-down"></i>
+                </button>
+                <div id="project-1-details" class="project-details">
+                    <p id="project-1-description" class="language-dependent">
+                        
+                        <br>
+                        <p>
+                        O código em C apresenta a implementação de um jogo de cartas estratégico e tático, onde dois jogadores se enfrentam em uma série de rodadas. Cada jogador recebe uma mão de cartas de um baralho que inclui cartas de diferentes cores e valores. O <strong>objetivo</strong> é vencer as rodadas acumulando pontos, que são determinados pelo resultado de combates entre as cartas jogadas pelos jogadores.
+                        </p>
+                        <br>
+                        <p>
+                        No início do jogo, o baralho é inicializado e embaralhado. As cartas são distribuídas entre os jogadores, que então alternam suas jogadas em cada rodada. Durante sua vez, um jogador pode escolher jogar uma carta da sua mão, exibir as cartas presentes na mesa ou encerrar o jogo.
+                        </p>
+                        <br>
+                        <p>
+                        Quando um jogador decide jogar uma carta, essa carta é colocada na mesa e um combate é iniciado. O combate envolve comparar o valor total das cartas pretas jogadas pelos jogadores. Certas cartas têm valores especiais que podem influenciar o resultado do combate. O jogador vencedor do combate recebe pontos e, em alguns casos, cartas adicionais são distribuídas entre os jogadores.
+                        </p>
+                        <br>
+                        <p>
+                        Ao final de cada rodada, os pontos são contabilizados com base nos resultados dos combates e na quantidade de rodadas jogadas. O jogo continua até que todas as cartas do baralho sejam utilizadas. O jogador com mais pontos ao final do jogo é declarado o vencedor.
+                        </p>
+                        <br>
+                        Essa implementação combina elementos de estratégia, gestão de mão e sorte, proporcionando uma experiência desafiadora e divertida para os jogadores.
+                    </p>
+
+                    <p id="project-1-technologies" class="language-dependent">Tecnologias usadas: C.</p>
+                    <a id="project-1-github" href="https://github.com/douglas565/Card-Game-dumb-play.git" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <span id="project-1-github-text" class="language-dependent">Código-fonte no GitHub: </span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="project" id="project-2">
+                <h3 id="project-2-title" class="language-dependent">Projeto 2: Sistema de Testes para Tomada de Decisão e Consultoria 📊💡</h3>
+                <button id="project-2-button" onclick="toggleProjectDetails('project-2')">
+                    <i class="fas fa-angle-down"></i>
+                </button>
+                <div id="project-2-details" class="project-details">
+                    <p id="project-2-description" class="language-dependent">Este projeto em desenvolvimento tem como objetivo empoderar você 
+                        na jornada de autoconhecimento, desenvolvimento pessoal e tomada de decisão. Através de uma plataforma interativa, 
+                        ofereceremos testes abrangentes e consultoria personalizada, moldadas para te ajudar a alcançar seu potencial máximo. 
+                        <br>
+                    <p>
+                        <strong>
+                        **Funcionalidades em Construção:**
+                        </strong>
+                    </p>
+                        <br>
+                        * Mergulho Interior: Explore testes de personalidade, habilidades, valores e interesses para desvendar seus pontos fortes e paixões. 
+                        <br>
+                        * Bússola da Carreira: Descubra as profissões que mais se encaixam com seu perfil e receba orientação para alcançar seus objetivos profissionais.
+                        <br> 
+                        * Mapa Financeiro: Compreenda melhor seu relacionamento com o dinheiro, defina metas e trace planos para alcançar a liberdade financeira.
+                        <br>
+                        * Análises Detalhadas: Receba relatórios personalizados que traduzem seus resultados em insights acionáveis e planos de ação.
+                        <br> 
+                        * Consultoria sob Medida: Conecte-se com especialistas para aprofundar seus conhecimentos, receber orientação individualizada e traçar estratégias personalizadas.
+                        <br>
+                        <strong>
+                        <p>**Para Quem É?**</p>
+                        </strong>
+                        <br> 
+                        * Exploradores do Autoconhecimento: Indivíduos em busca de entender melhor quem são e o que realmente desejam alcançar.
+                        <br> 
+                        * Profissionais em Ascensão: Pessoas que buscam aprimorar suas habilidades, tomar decisões mais assertivas e impulsionar suas carreiras.
+                        <br> 
+                        * Empreendedores Visionários: Líderes que desejam construir times de alta performance e impulsionar o crescimento de seus negócios.
+                        <br>
+                        
+                        
+                    <p id="project-2-technologies" class="language-dependent">Tecnologias usadas: Python.</p>
+                    <a id="project-2-github" href="https://github.com/douglas565/Card-Game-dumb-play.git" target="_blank"> 
+                        <i class="fab fa-github"></i>
+                        <span id="project-2-github-text" class="language-dependent">Código-fonte no GitHub</span>
+                    </a>
+                   
+                </div>
+            </div>
+
+        <script src="{{ url_for('static', filename='chatbot.js') }}"></script> 
+</body>
+
+</html>
