@@ -2,254 +2,225 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Cor de fundo suave */
-    color: #333; /* Cor do texto */
-    line-height: 1.6; /* Espaçamento entre linhas */
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
-
 .container {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff; /* Cor de fundo do conteúdo */
-    border-radius: 5px; /* Borda arredondada */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra discreta */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 h1 {
-    font-size: 2.5em; /* Título principal - tamanho grande */
+    font-size: 2.5em;
     margin-bottom: 10px;
-    color: #007bff; /* Azul vibrante para destaque */
-    text-align: center; /* Centraliza o título */
+    color: #007bff;
+    text-align: center;
 }
-
 h2 {
-    font-size: 1.8em; /* Títulos das seções - tamanho médio */
+    font-size: 1.8em;
     margin-bottom: 15px;
-    color: #333; /* Preto para contraste */
+    color: #333;
 }
-
 .info {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
-
 .info-item {
     width: 48%;
 }
-
 .info-item p {
     margin-bottom: 5px;
 }
-
 .section {
     margin-bottom: 30px;
 }
-
 .section-title {
     font-weight: bold;
     margin-bottom: 10px;
-    color: #007bff; /* Azul vibrante para destaque */
+    color: #007bff;
 }
-
-.experience-item, .education-item {
+.experience-item,
+.education-item {
     margin-bottom: 15px;
     padding: 10px;
-    border: 1px solid #ddd; /* Borda leve */
-    border-radius: 5px; /* Borda arredondada */
-    background-color: #f9f9f9; /* Cor de fundo leve */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
 }
-
-.experience-item h3, .education-item h3 {
+.experience-item h3,
+.education-item h3 {
     margin-bottom: 5px;
     font-weight: bold;
-    color: #007bff; /* Azul vibrante para destaque */
+    color: #007bff;
 }
-
-.experience-item p, .education-item p {
+.experience-item p,
+.education-item p {
     margin: 0;
 }
-
 .skills {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px; /* Espaçamento entre as habilidades */
+    gap: 10px;
 }
-
 .skill {
     padding: 5px 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #e9e9e9; /* Cor de fundo leve */
-    color: #333; /* Cor do texto */
-    font-weight: bold; /* Texto em negrito */
+    background-color: #e9e9e9;
+    color: #333;
+    font-weight: bold;
 }
-
 ul {
     list-style: disc;
     margin-left: 20px;
 }
-
 li {
     margin-bottom: 5px;
 }
-
 a {
-    color: #007bff; /* Azul vibrante para links */
+    color: #007bff;
     text-decoration: none;
 }
-
 a:hover {
     text-decoration: underline;
 }
-
 .language-buttons {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    /* Alinha os botões à direita */
     margin-bottom: 20px;
     padding: 10px;
-    background-color: #f9f9f9; /* Cor de fundo leve */
-    border: 1px solid #ddd; /* Borda leve */
-    border-radius: 5px; /* Borda arredondada */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
-
 .language-buttons button {
     background: none;
     border: none;
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 10px; /* Espaçamento entre imagem e texto */
-    font-size: 16px; /* Tamanho da fonte do texto */
-    font-weight: bold; /* Negrito no texto */
-    color: #333; /* Cor do texto */
+    gap: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
 }
-
 .language-buttons img {
-    width: 30px; /* Largura da imagem */
-    height: 20px; /* Altura da imagem */
+    width: 30px;
+    height: 20px;
 }
-
 /* Estilos para a seção de perfil */
 .profile {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
-
 .profile-picture {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    /* Ajuste o tamanho da foto */
+    height: 150px;
+    /* Ajuste o tamanho da foto */
     border-radius: 50%;
     margin-right: 20px;
 }
-
 /* Estilos para os links de redes sociais */
 .info-item a {
-    display: inline-block; /* Permite o uso de width e height */
-    margin-right: 10px; /* Espaçamento entre os ícones */
+    display: inline-block;
+    margin-right: 10px;
 }
-
-.info-item img { /* Estilos para as imagens dos ícones */
+.info-item img {
     width: 30px;
     height: 30px;
-    vertical-align: middle; /* Centraliza verticalmente */
+    vertical-align: middle;
 }
-
 /* Estilos para a caixa do chatbot */
 .chatbot-box {
-    background-color: #f9f9f9; /* Cor de fundo leve */
-    border: 1px solid #ddd; /* Borda leve */
-    border-radius: 5px; /* Borda arredondada */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
     margin-bottom: 20px;
     padding: 10px;
 }
-
 .chatbot-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
 }
-
 .chatbot-header h3 {
     margin: 0;
     font-weight: bold;
 }
-
 .chatbot-header button {
     background: none;
     border: none;
     cursor: pointer;
 }
-
 .chatbot-header button i {
     font-size: 1.2em;
 }
-
 .chatbot-content {
-    display: block; /* Mostra a caixa de chat inicialmente */
+    display: none;
+    /* Oculta a caixa de chat inicialmente */
 }
-
 .chatbot-messages {
-    max-height: 200px; /* Altura máxima para a caixa de mensagens */
-    overflow-y: auto; /* Habilita scroll vertical */
+    max-height: 200px;
+    overflow-y: auto;
     padding: 10px;
 }
-
 .chat-message {
     margin-bottom: 5px;
     padding: 10px;
     border-radius: 5px;
 }
-
 .user {
-    background-color: #e9e9e9; /* Cor de fundo suave */
+    background-color: #e9e9e9;
     text-align: right;
 }
-
 .chatbot {
-    background-color: #e0f2f7; /* Cor de fundo suave */
+    background-color: #e0f2f7;
     text-align: left;
 }
-
 #chatbot-input {
-    width: 100%;
+    width: calc(100% - 90px);
+    /* Ajusta a largura do input */
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
     margin-top: 10px;
 }
-
 #chatbot-input::placeholder {
-    color: #999; /* Cor do placeholder */
+    color: #999;
 }
-
 #chatbot-input:focus {
     outline: none;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Sombra ao focar */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
-
-button {
-    background-color: #007bff; /* Azul vibrante */
-    color: #fff; /* Texto branco */
+#enviar {
+    width: 80px;
+    /* Ajusta a largura do botão */
+    background-color: #007bff;
+    color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 10px;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
+    margin-left: 10px;
+    /* Adiciona um espaço à esquerda do botão */
 }
-
-button:hover {
-    opacity: 0.8; /* Efeito de hover */
+#enviar:hover {
+    opacity: 0.8;
 }
-
 /* Estilos para a seção de projetos */
 #projects-section {
     margin-bottom: 30px;
 }
-
 .project {
     margin-bottom: 20px;
     padding: 10px;
@@ -257,55 +228,46 @@ button:hover {
     border-radius: 5px;
     background-color: #f9f9f9;
 }
-
 .project h3 {
     margin-bottom: 5px;
     font-weight: bold;
     color: #007bff;
 }
-
 .project-details {
     margin-top: 10px;
-    display: none; /* Inicialmente oculto */
+    display: none;
 }
-
 .project-details p {
     margin-bottom: 5px;
 }
-
 .project-details a {
     display: block;
     margin-top: 5px;
     color: #007bff;
     text-decoration: none;
 }
-
 .project-details a:hover {
     text-decoration: underline;
 }
-
 .project-details img {
     width: 100%;
     max-height: 200px;
     margin-top: 10px;
     object-fit: cover;
 }
-
 .quick-links {
     display: flex;
-    gap: 10px; /* Espaçamento entre os links */
-    margin-bottom: 10px; /* Espaçamento abaixo dos links */
+    gap: 10px;
+    margin-bottom: 10px;
 }
-
 .quick-links a {
     display: flex;
     align-items: center;
     text-decoration: none;
     color: #007bff;
 }
-
 .quick-links img {
     width: 30px;
     height: 30px;
-    margin-right: 5px; /* Espaçamento entre o ícone e o texto */
+    margin-right: 5px;
 }
