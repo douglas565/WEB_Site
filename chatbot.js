@@ -103,101 +103,6 @@ const translations = {
     'qualifications-item-2-en': 'Complementary training in areas such as: Digital Circuits, Industrial Management and Occupational Safety, Electronics, Electrical Projects, Technical Drawing, Mechanical Technology, Power Systems, Electrical Circuits, Photovoltaic Projects, Python Language, C Language, Front-end Language (HTML and CSS), General Administration Theory, Programming I, Digital Circuits.',
     'projects-title-pt-BR': 'Projetos',
     'projects-title-en': 'Projects',
-    'project-1-title-pt-BR': 'Projeto 1: Card-Game-dumb-play 🃏',
-    'project-1-title-en': 'Project 1: Card-Game-dumb-play 🃏',
-    'project-1-description-pt-BR': `
-        O código em C apresenta a implementação de um jogo de cartas estratégico e tático, onde dois jogadores se enfrentam em uma série de rodadas. Cada jogador recebe uma mão de cartas de um baralho que inclui cartas de diferentes cores e valores. O <strong>objetivo</strong> é vencer as rodadas acumulando pontos, que são determinados pelo resultado de combates entre as cartas jogadas pelos jogadores.
-        <br>
-        <p>
-        No início do jogo, o baralho é inicializado e embaralhado. As cartas são distribuídas entre os jogadores, que então alternam suas jogadas em cada rodada. Durante sua vez, um jogador pode escolher jogar uma carta da sua mão, exibir as cartas presentes na mesa ou encerrar o jogo.
-        </p>
-        <br>
-        <p>
-        Quando um jogador decide jogar uma carta, essa carta é colocada na mesa e um combate é iniciado. O combate envolve comparar o valor total das cartas pretas jogadas pelos jogadores. Certas cartas têm valores especiais que podem influenciar o resultado do combate. O jogador vencedor do combate recebe pontos e, em alguns casos, cartas adicionais são distribuídas entre os jogadores.
-        </p>
-        <br>
-        <p>
-        Ao final de cada rodada, os pontos são contabilizados com base nos resultados dos combates e na quantidade de rodadas jogadas. O jogo continua até que todas as cartas do baralho sejam utilizadas. O jogador com mais pontos ao final do jogo é declarado o vencedor.
-        </p>
-        <br>
-        Essa implementação combina elementos de estratégia, gestão de mão e sorte, proporcionando uma experiência desafiadora e divertida para os jogadores.
-    `,
-    
-    'project-1-description-en': `
-        The C code presents the implementation of a strategic and tactical card game where two players face off in a series of rounds. Each player receives a hand of cards from a deck that includes cards of different suits and values. The goal is to win rounds by accumulating points, which are determined by the outcome of battles between cards played by the players.
-        
-        At the beginning of the game, the deck is initialized and shuffled. Cards are dealt to the players, who then alternate turns each round. During their turn, a player can choose to play a card from their hand, display the cards on the table, or end the game.
-        
-        When a player decides to play a card, that card is placed on the table and a battle is initiated. The battle involves comparing the total value of black cards played by the players. Certain cards have special values that can influence the outcome of the battle. The winning player of the battle receives points and, in some cases, additional cards are dealt to the players.
-        
-        At the end of each round, points are tallied based on the outcome of battles and the number of rounds played. The game continues until all cards in the deck have been used. The player with the most points at the end of the game is declared the winner.
-        
-        This implementation combines elements of strategy, hand management and luck, providing a challenging and fun experience for players.
-    `,
-    
-    'project-1-technologies-pt-BR': 'Tecnologias usadas: C.',
-    'project-1-technologies-en': 'Technologies used: C.',
-    'project-1-github-pt-BR': 'Código-fonte no GitHub: ',
-    'project-1-github-en': 'Source code on GitHub: ',
-    'project-2-title-pt-BR': 'Projeto 2: Sistema de Testes para Tomada de Decisão e Consultoria 📊💡',
-    'project-2-title-en': 'Project 2: Testing System for Decision Making and Consulting 📊💡',
-    'project-2-description-pt-BR': `Este projeto em desenvolvimento tem como objetivo empoderar você 
-        na jornada de autoconhecimento, desenvolvimento pessoal e tomada de decisão. Através de uma plataforma interativa, 
-        ofereceremos testes abrangentes e consultoria personalizada, moldadas para te ajudar a alcançar seu potencial máximo. 
-        <br>
-    <p>
-        <strong>
-        **Funcionalidades em Construção:**
-        </strong>
-    </p>
-        <br>
-        * Mergulho Interior: Explore testes de personalidade, habilidades, valores e interesses para desvendar seus pontos fortes e paixões. 
-        <br>
-        * Bússola da Carreira: Descubra as profissões que mais se encaixam com seu perfil e receba orientação para alcançar seus objetivos profissionais.
-        <br> 
-        * Mapa Financeiro: Compreenda melhor seu relacionamento com o dinheiro, defina metas e trace planos para alcançar a liberdade financeira.
-        <br>
-        * Análises Detalhadas: Receba relatórios personalizados que traduzem seus resultados em insights acionáveis e planos de ação.
-        <br> 
-        * Consultoria sob Medida: Conecte-se com especialistas para aprofundar seus conhecimentos, receber orientação individualizada e traçar estratégias personalizadas.
-        <br>
-        <strong>
-        <p>**Para Quem É?**</p>
-        </strong>
-        <br> 
-        * Exploradores do Autoconhecimento: Indivíduos em busca de entender melhor quem são e o que realmente desejam alcançar.
-        <br> 
-        * Profissionais em Ascensão: Pessoas que buscam aprimorar suas habilidades, tomar decisões mais assertivas e impulsionar suas carreiras.
-        <br> 
-        * Empreendedores Visionários: Líderes que desejam construir times de alta performance e impulsionar o crescimento de seus negócios.
-        <br>`,
-    'project-2-description-en': `This project under development aims to empower you on your journey of self-knowledge, personal development, and decision-making. Through an interactive platform, we will offer comprehensive tests and personalized consulting, designed to help you reach your full potential.
-    
-    
-        
-        **Features Under Construction:**
-        
-    
-        
-        * Inner Dive: Explore personality, skills, values, and interests tests to uncover your strengths and passions.
-        
-        * Career Compass: Discover the professions that best fit your profile and receive guidance to achieve your career goals.
-        
-        * Financial Map: Better understand your relationship with money, set goals, and make plans to achieve financial freedom.
-        
-        * Detailed Analysis: Receive personalized reports that translate your results into actionable insights and action plans.
-        
-        * Customized Consulting: Connect with experts to deepen your knowledge, receive individualized guidance, and develop personalized strategies.
-      
-        
-        **Who Is It For?**
-        
-        
-        * Self-Knowledge Seekers: Individuals seeking to better understand who they are and what they truly want to achieve.
-        
-        * Rising Professionals: People looking to improve their skills, make more assertive decisions, and boost their careers.
-        
-        * Visionary Entrepreneurs: Leaders who want to build high-performance teams and drive the growth of their businesses.`,
     'project-2-technologies-pt-BR': 'Tecnologias usadas: Python.',
     'project-2-technologies-en': 'Technologies used: Python.',
     'project-2-github-pt-BR': 'Código-fonte no GitHub',
@@ -214,6 +119,7 @@ const translations = {
     'chatbot-curriculo-en': 'Resume Chatbot',
     'enviar-pt-BR': 'Enviar',
     'enviar-en': 'Send'
+    
 };
 
 function changeLanguage(lang) {
