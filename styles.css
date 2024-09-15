@@ -1,34 +1,32 @@
-/* styles.css */
-
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
+    background-color: #f4f4f4; /* Cor de fundo suave */
+    color: #333; /* Cor do texto */
+    line-height: 1.6; /* Espaçamento entre linhas */
 }
 
 .container {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Cor de fundo do conteúdo */
+    border-radius: 5px; /* Borda arredondada */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra discreta */
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 2.5em; /* Título principal - tamanho grande */
     margin-bottom: 10px;
-    color: #007bff;
-    text-align: center;
+    color: #007bff; /* Azul vibrante para destaque */
+    text-align: center; /* Centraliza o título */
 }
 
 h2 {
-    font-size: 1.8em;
+    font-size: 1.8em; /* Títulos das seções - tamanho médio */
     margin-bottom: 15px;
-    color: #333;
+    color: #333; /* Preto para contraste */
 }
 
 .info {
@@ -52,43 +50,40 @@ h2 {
 .section-title {
     font-weight: bold;
     margin-bottom: 10px;
-    color: #007bff;
+    color: #007bff; /* Azul vibrante para destaque */
 }
 
-.experience-item,
-.education-item {
+.experience-item, .education-item {
     margin-bottom: 15px;
     padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #f9f9f9;
+    border: 1px solid #ddd; /* Borda leve */
+    border-radius: 5px; /* Borda arredondada */
+    background-color: #f9f9f9; /* Cor de fundo leve */
 }
 
-.experience-item h3,
-.education-item h3 {
+.experience-item h3, .education-item h3 {
     margin-bottom: 5px;
     font-weight: bold;
-    color: #007bff;
+    color: #007bff; /* Azul vibrante para destaque */
 }
 
-.experience-item p,
-.education-item p {
+.experience-item p, .education-item p {
     margin: 0;
 }
 
 .skills {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 10px; /* Espaçamento entre as habilidades */
 }
 
 .skill {
     padding: 5px 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #e9e9e9;
-    color: #333;
-    font-weight: bold;
+    background-color: #e9e9e9; /* Cor de fundo leve */
+    color: #333; /* Cor do texto */
+    font-weight: bold; /* Texto em negrito */
 }
 
 ul {
@@ -101,7 +96,7 @@ li {
 }
 
 a {
-    color: #007bff;
+    color: #007bff; /* Azul vibrante para links */
     text-decoration: none;
 }
 
@@ -111,13 +106,12 @@ a:hover {
 
 .language-buttons {
     display: flex;
-    justify-content: flex-end;
-    /* Alinha os botões à direita */
+    justify-content: space-between;
     margin-bottom: 20px;
     padding: 10px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    background-color: #f9f9f9; /* Cor de fundo leve */
+    border: 1px solid #ddd; /* Borda leve */
+    border-radius: 5px; /* Borda arredondada */
 }
 
 .language-buttons button {
@@ -126,15 +120,15 @@ a:hover {
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
+    gap: 10px; /* Espaçamento entre imagem e texto */
+    font-size: 16px; /* Tamanho da fonte do texto */
+    font-weight: bold; /* Negrito no texto */
+    color: #333; /* Cor do texto */
 }
 
 .language-buttons img {
-    width: 30px;
-    height: 20px;
+    width: 30px; /* Largura da imagem */
+    height: 20px; /* Altura da imagem */
 }
 
 /* Estilos para a seção de perfil */
@@ -145,31 +139,29 @@ a:hover {
 }
 
 .profile-picture {
-    width: 150px;
-    /* Ajuste o tamanho da foto */
-    height: 150px;
-    /* Ajuste o tamanho da foto */
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     margin-right: 20px;
 }
 
 /* Estilos para os links de redes sociais */
 .info-item a {
-    display: inline-block;
-    margin-right: 10px;
+    display: inline-block; /* Permite o uso de width e height */
+    margin-right: 10px; /* Espaçamento entre os ícones */
 }
 
-.info-item img {
+.info-item img { /* Estilos para as imagens dos ícones */
     width: 30px;
     height: 30px;
-    vertical-align: middle;
+    vertical-align: middle; /* Centraliza verticalmente */
 }
 
 /* Estilos para a caixa do chatbot */
 .chatbot-box {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    background-color: #f9f9f9; /* Cor de fundo leve */
+    border: 1px solid #ddd; /* Borda leve */
+    border-radius: 5px; /* Borda arredondada */
     margin-bottom: 20px;
     padding: 10px;
 }
@@ -197,13 +189,12 @@ a:hover {
 }
 
 .chatbot-content {
-    display: none;
-    /* Oculta a caixa de chat inicialmente */
+    display: block; /* Mostra a caixa de chat inicialmente */
 }
 
 .chatbot-messages {
-    max-height: 200px;
-    overflow-y: auto;
+    max-height: 200px; /* Altura máxima para a caixa de mensagens */
+    overflow-y: auto; /* Habilita scroll vertical */
     padding: 10px;
 }
 
@@ -214,18 +205,17 @@ a:hover {
 }
 
 .user {
-    background-color: #e9e9e9;
+    background-color: #e9e9e9; /* Cor de fundo suave */
     text-align: right;
 }
 
 .chatbot {
-    background-color: #e0f2f7;
+    background-color: #e0f2f7; /* Cor de fundo suave */
     text-align: left;
 }
 
 #chatbot-input {
-    width: calc(100% - 90px);
-    /* Ajusta a largura do input */
+    width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -233,30 +223,26 @@ a:hover {
 }
 
 #chatbot-input::placeholder {
-    color: #999;
+    color: #999; /* Cor do placeholder */
 }
 
 #chatbot-input:focus {
     outline: none;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Sombra ao focar */
 }
 
-#enviar {
-    width: 80px;
-    /* Ajusta a largura do botão */
-    background-color: #007bff;
-    color: #fff;
+button {
+    background-color: #007bff; /* Azul vibrante */
+    color: #fff; /* Texto branco */
     border: none;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
-    margin-left: 10px;
-    /* Adiciona um espaço à esquerda do botão */
 }
 
-#enviar:hover {
-    opacity: 0.8;
+button:hover {
+    opacity: 0.8; /* Efeito de hover */
 }
 
 /* Estilos para a seção de projetos */
@@ -280,7 +266,7 @@ a:hover {
 
 .project-details {
     margin-top: 10px;
-    display: none;
+    display: none; /* Inicialmente oculto */
 }
 
 .project-details p {
@@ -307,8 +293,8 @@ a:hover {
 
 .quick-links {
     display: flex;
-    gap: 10px;
-    margin-bottom: 10px;
+    gap: 10px; /* Espaçamento entre os links */
+    margin-bottom: 10px; /* Espaçamento abaixo dos links */
 }
 
 .quick-links a {
@@ -321,6 +307,5 @@ a:hover {
 .quick-links img {
     width: 30px;
     height: 30px;
-    margin-right: 5px;
+    margin-right: 5px; /* Espaçamento entre o ícone e o texto */
 }
-
