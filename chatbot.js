@@ -103,10 +103,22 @@ const translations = {
     'qualifications-item-2-en': 'Complementary training in areas such as: Digital Circuits, Industrial Management and Occupational Safety, Electronics, Electrical Projects, Technical Drawing, Mechanical Technology, Power Systems, Electrical Circuits, Photovoltaic Projects, Python Language, C Language, Front-end Language (HTML and CSS), General Administration Theory, Programming I, Digital Circuits.',
     'projects-title-pt-BR': 'Projetos',
     'projects-title-en': 'Projects',
+    'project-1-pt-br': 'Eu desenvolvi código em C apresenta a implementação de um jogo de cartas estratégico e tático, onde dois jogadores se enfrentam em uma série de rodadas. Cada jogador recebe uma mão de cartas de um baralho que inclui cartas de diferentes cores e valores. O <strong>objetivo</strong>= é vencer as rodadas acumulando pontos, que são determinados pelo resultado de combates entre as cartas jogadas pelos jogadores. Este projeto foi um trabalho de Lógica e algoritimo da minha graduação em Sistemmas da Informmação na Universidade Federal de Santa Maria em 2023.Tecnologias usadas: C.',
+    'project-1-en': 'I developed code in C that implements a strategic and tactical card game, where two players face each other in a series of rounds. Each player receives a hand of cards from a deck that includes cards of different colors and values. The <strong>goal</strong> is to win the rounds by accumulating points, which are determined by the result of battles between the cards played by the players. This project was a Logic and algorithm work of my graduation in Information Systems at the Federal University of Santa Maria in 2023. Technologies used: C.',
+    'project-1-technologies-pt-BR': 'Tecnologias usadas: C.',
+    'project-1-technologies-en': 'Technologies used: C.',
+    'project-1-github-pt-BR': 'Para saber mais acesse o link para o Código-fonte no GitHub',
+    'project-1-github-en': 'To learn more access the link to the Source code on GitHub',
     'project-2-technologies-pt-BR': 'Tecnologias usadas: Python.',
     'project-2-technologies-en': 'Technologies used: Python.',
-    'project-2-github-pt-BR': 'Código-fonte no GitHub',
-    'project-2-github-en': 'Source code on GitHub',
+    'project-2-title-pt-BR': 'Projeto 2: Sistema de Serviços e Consultorias',
+    'project-2-title-en': 'Project 2: Services and Consulting System',
+    'project-2-pt-BR': 'Este projeto foi um estudo em python que desenvolvi junto ao curso Alura, que apresenta um desenvolvimento por meio de graficos e comparações, fazendo ciencia de dados de uma empresa que presta um serviço de consultoria para pessoas que querem imigrar do Brasil para o Canadá. O projeto é para uma empresa fictícia que otimizei os serviços de aconselhamento e consultoria para essas pessoas que desejam fazer imigração.',
+    'project-2-en': 'This project was a study in python that I developed with the Alura course, which presents a development through graphics and comparisons, making data science of a company that provides a consulting service for people who want to immigrate from Brazil to Canada. The project is for a fictitious company that I optimized the counseling and consulting services for these people who wish to immigrate.',
+    'project-2-technologies-pt-BR': 'Tecnologias usadas: Python.',
+    'project-2-technologies-en': 'Technologies used: Python.',
+    'project-2-github-pt-BR': 'Para saber mais acesse o link para o Código-fonte no GitHub',
+    'project-2-github-en': 'To learn more access the link to the Source code on GitHub',
     'github-title-pt-BR': 'GitHub',
     'github-title-en': 'GitHub',
     'github-description-pt-BR': 'Para visualizar meu portfólio de projetos e código-fonte, acesse meu perfil no GitHub:',
@@ -119,7 +131,7 @@ const translations = {
     'chatbot-curriculo-en': 'Resume Chatbot',
     'enviar-pt-BR': 'Enviar',
     'enviar-en': 'Send'
-    
+
 };
 
 function changeLanguage(lang) {
@@ -173,7 +185,7 @@ function sendChat() {
         cargo: "Técnico em Eletrotécnica",
         empresa: "Justiça Federal de Santa Catarina",
         formacao: "Ciência da Computação",
-        instituicao: "UNISUL"
+        instituicao: "UNISUL",
         // ... outras informações
     };
 
