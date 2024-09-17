@@ -153,26 +153,25 @@ function changeLanguage(lang) {
         }
     });
 
-    // Corrigido: Seletor mais específico para títulos de projetos
     var projectTitles = document.querySelectorAll('.project .project-title');
     projectTitles.forEach(title => {
         const titleId = title.id + '-' + lang;
         const translatedTitle = translations[titleId];
         if (translatedTitle) {
-            title.textContent = translatedTitle;
+            title.innerHTML = translatedTitle; //  <-- Correção: Substituir com =
         }
     });
 
-    // Corrigido: Seletor mais específico para descrições de projetos
-    var projectDescriptions = document.querySelectorAll('.project .project-description'); 
+    var projectDescriptions = document.querySelectorAll('.project .project-description');
     projectDescriptions.forEach(description => {
         const descriptionId = description.id + '-' + lang;
         const translatedDescription = translations[descriptionId];
         if (translatedDescription) {
-            description.textContent = translatedDescription;
+            description.innerHTML = translatedDescription; //  <-- Correção: Substituir com =
         }
     });
 }
+
 
 // ... (resto do seu código) ... 
 function toggleChatbox() {
