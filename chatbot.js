@@ -138,21 +138,23 @@ function changeLanguage(lang) {
     console.log("Chamando a função changeLanguage com idioma:", lang);
     const elements = document.querySelectorAll('.language-dependent');
     console.log("Elementos encontrados:", elements);
-  
+
     elements.forEach(element => {
-      const elementId = element.id;
-      console.log("ID do elemento:", elementId);
-      const textKey = elementId + '-' + lang;
-      console.log("Chave de tradução:", textKey);
-      const translatedText = translations[textKey];
-      console.log("Texto traduzido:", translatedText);
-  
-      if (translatedText) {
-        element.innerHTML = translatedText;
-        console.log("Conteúdo do elemento atualizado:", element.innerHTML);
-      }
+        const elementId = element.id;
+        console.log("ID do elemento:", elementId);
+        const textKey = elementId + '-' + lang;
+        console.log("Chave de tradução:", textKey);
+        const translatedText = translations[textKey];
+        console.log("Texto traduzido:", translatedText);
+
+        if (translatedText) {
+            element.innerHTML = translatedText;
+            console.log("Conteúdo do elemento atualizado:", element.innerHTML);
+        }
     });
-    var projectTitles = document.querySelectorAll('.project h3');
+
+    // Corrigido: Seletor mais específico para títulos de projetos
+    var projectTitles = document.querySelectorAll('.project .project-title');
     projectTitles.forEach(title => {
         const titleId = title.id + '-' + lang;
         const translatedTitle = translations[titleId];
@@ -161,7 +163,8 @@ function changeLanguage(lang) {
         }
     });
 
-    var projectDescriptions = document.querySelectorAll('.project-details p');
+    // Corrigido: Seletor mais específico para descrições de projetos
+    var projectDescriptions = document.querySelectorAll('.project .project-description'); 
     projectDescriptions.forEach(description => {
         const descriptionId = description.id + '-' + lang;
         const translatedDescription = translations[descriptionId];
@@ -170,6 +173,8 @@ function changeLanguage(lang) {
         }
     });
 }
+
+// ... (resto do seu código) ... 
 function toggleChatbox() {
     const chatbotContent = document.getElementById('chatbot-content');
     const icon = document.querySelector('.chatbot-header button i');
