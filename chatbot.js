@@ -191,48 +191,7 @@ function toggleChatbox() {
     }
 }
 
-function sendChat() {
-    const userInput = document.getElementById('chatbot-input').value;
-    const chatbotMessages = document.getElementById('chatbot-messages');
-    const chatbotResponse = document.getElementById('chatbot-response');
 
-    // Adiciona a mensagem do usuário
-    const userMessage = document.createElement('div');
-    userMessage.classList.add('chat-message', 'user');
-    userMessage.textContent = userInput;
-    chatbotMessages.appendChild(userMessage);
-
-    // Obter informações do usuário (nome, cargo, empresa, etc.)
-    const userInfo = {
-        nome: "Douglas Ramos Charqueiro", 
-        cargo: "Técnico em Eletrotécnica",
-        empresa: "Justiça Federal de Santa Catarina",
-        formacao: "Ciência da Computação",
-        instituicao: "UNISUL",
-        // ... outras informações
-    };
-
-    // Envia a pergunta para o chatbot, incluindo userInfo
-    fetch(chatbotEndpoint, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ 'prompt': userInput, 'user_info': userInfo })
-    })
-    .then(response => response.text()) 
-    .then(data => {
-        try {
-            data = JSON.parse(data); 
-            chatbotResponse.innerHTML = data.response; 
-        } catch (error) {
-            chatbotResponse.textContent = data; 
-        }
-        document.getElementById('chatbot-input').value = ''; 
-    })
-    .catch(error => {
-        console.error('Erro ao enviar a mensagem para o chatbot:', error);
-        chatbotResponse.textContent = `Erro: ${error.message}`; 
-    });
-}
 
 function toggleProjectDetails(projectId) {
     const details = document.getElementById(projectId + '-details');
