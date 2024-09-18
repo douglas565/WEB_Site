@@ -278,3 +278,58 @@ a:hover {
     max-width: 500px; /* Largura máxima da imagem */
     height: auto; /* Ajusta altura automaticamente */
   }
+
+
+
+  /* Estilos do Formulário de Contato */
+#contato form {
+    max-width: 300px; /* Largura máxima do formulário */
+    margin: 30px auto; /* Centraliza o formulário */
+    padding: 20px; 
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+
+#contato label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left; /* Alinhamento à esquerda */
+}
+
+#contato input[type="text"],
+#contato input[type="email"],
+#contato textarea {
+    width: 100%;
+    padding: 10px; /* Aumenta o padding dos inputs */
+    margin-bottom: 15px; /* Margem inferior para espaçamento */
+    border: 1px solid #ccc;
+    border-radius: 3px; /* Bordas arredondadas */
+    box-sizing: border-box; 
+}
+
+#contato input[type="text"]:focus,
+#contato input[type="email"]:focus,
+#contato textarea:focus {
+    outline: none; 
+    border-color: #007bff; /* Cor de destaque no foco */ 
+}
+
+#contato textarea {
+    height: 120px; /* Altura da área de texto */
+}
+
+/* Botão de Envio */
+#contato button[type="submit"] {
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 3px; /* Bordas arredondadas */
+    cursor: pointer;
+}
+
+#contato button[type="submit"]:hover {
+    background-color: #0056b3; /* Cor de fundo no hover */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra no hover */
+}
