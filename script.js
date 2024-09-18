@@ -15,6 +15,16 @@ const translations = {
     'linkedin-en': 'LinkedIn',
     'github-pt-BR': 'GitHub',
     'github-en': 'GitHub',
+    'contato-titulo-pt-BR': 'Me Envie uma Mensagem!',
+    'contato-titulo-en': 'Send Me a Message!',
+    'nomecontato-pt-BR': 'Seu Nome:',
+    'nomecontato-en': 'Your Name:',
+    'emailcontato-pt-BR': 'Seu E-mail:',
+    'emailcontato-en': 'Your Email:',
+    'mensagemcontato-pt-BR': 'Sua Mensagem:',
+    'mensagemcontato-en': 'Your Message:',
+    'enviarcontato-pt-BR': 'Enviar Mensagem',
+    'enviarcontato-en': 'Send Message',
     'about-title-pt-BR': 'Sobre',
     'about-title-en': 'About',
     'about-description-pt-BR': 'Sou um profissional de tecnologia com paixão por desenvolvimento de software e aprendizado contínuo. Atualmente trabalho como Técnico em Eletrotécnica na Justiça Federal de Santa Catarina, com foco em automação industrial. Sou graduando em Ciência da Computação pela UNISUL e possuo experiência em diversos projetos de software e hardware. Sou apaixonado por aprender novas tecnologias e aprimorar minhas habilidades para entregar soluções inovadoras e eficientes.',
@@ -207,26 +217,4 @@ function toggleProjectDetails(projectId) {
         icon.classList.remove('fa-angle-up');
         icon.classList.add('fa-angle-down');
     }
-}
-
-function sendContactForm() {
-    const name = document.getElementById('contact-name').value;
-    const email = document.getElementById('contact-email').value;
-    const message = document.getElementById('contact-message').value;
-
-    const contactForm = {
-        name: name,
-        email: email,
-        message: message
-    };
-
-    console.log('Enviando formulário de contato:', contactForm);
-
-    // Simula o envio do formulário
-    alert('Formulário de contato enviado com sucesso!');
-
-    // Limpa os campos do formulário
-    document.getElementById('contact-name').value = '';
-    document.getElementById('contact-email').value = '';
-    document.getElementById('contact-message').value = '';
 }
