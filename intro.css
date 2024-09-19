@@ -1,31 +1,18 @@
 html, body {
-  margin: 0; 
-  overflow: hidden;
-}
-
-body {
-  background-color: #222; /* Define a cor de fundo para cinza escuro */
-}
-
-
-#space-container-top {
-  opacity: 0.6;
-  position: absolute;
-  top: 0;
-  z-index: 10;
-}
-
-img.cosmos {
-  position: absolute;
-  z-index: 20;
-  width: 24vw;
-  margin: auto;
-  top: 0; 
-  left: 0; 
-  bottom: 0;  
-  right: 0;
-}
-
-h1 {
-  color: #fff; /* Define a cor do texto do h1 para branco */
-}
+    margin: 0; 
+    overflow: hidden;
+  }
+  #space-container-top {
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    z-index:10;
+  }
+  img.cosmos {
+   position: absolute;
+   z-index: 20;
+   width: 24vw;
+   margin: auto;
+   top: 0; left: 0; bottom: 0;  right: 0;
+  }
+  
