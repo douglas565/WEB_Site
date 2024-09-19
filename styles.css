@@ -3,9 +3,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--background-color);
-  color: var(--text-color);
+    color: var(--text-color);
     line-height: 1.6;
 }
+
 .container {
     width: 80%;
     margin: 0 auto;
@@ -14,36 +15,44 @@ body {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
     color: #007bff;
     text-align: center;
 }
+
 h2 {
     font-size: 1.8em;
     margin-bottom: 15px;
     color: #333;
 }
+
 .info {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
+
 .info-item {
     width: 48%;
 }
+
 .info-item p {
     margin-bottom: 5px;
 }
+
 .section {
     margin-bottom: 30px;
 }
+
 .section-title {
     font-weight: bold;
     margin-bottom: 10px;
     color: #007bff;
 }
+
 .experience-item,
 .education-item {
     margin-bottom: 15px;
@@ -52,21 +61,25 @@ h2 {
     border-radius: 5px;
     background-color: #f9f9f9;
 }
+
 .experience-item h3,
 .education-item h3 {
     margin-bottom: 5px;
     font-weight: bold;
     color: #007bff;
 }
+
 .experience-item p,
 .education-item p {
     margin: 0;
 }
+
 .skills {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
+
 .skill {
     padding: 5px 10px;
     border: 1px solid #ccc;
@@ -75,20 +88,25 @@ h2 {
     color: #333;
     font-weight: bold;
 }
+
 ul {
     list-style: disc;
     margin-left: 20px;
 }
+
 li {
     margin-bottom: 5px;
 }
+
 a {
     color: #007bff;
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: underline;
 }
+
 .language-buttons {
     display: flex;
     justify-content: flex-end;
@@ -99,6 +117,7 @@ a:hover {
     border: 1px solid #ddd;
     border-radius: 5px;
 }
+
 .language-buttons button {
     background: none;
     border: none;
@@ -110,16 +129,19 @@ a:hover {
     font-weight: bold;
     color: #333;
 }
+
 .language-buttons img {
     width: 30px;
     height: 20px;
 }
+
 /* Estilos para a seção de perfil */
 .profile {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
+
 .profile-picture {
     width: 150px;
     /* Ajuste o tamanho da foto */
@@ -128,16 +150,19 @@ a:hover {
     border-radius: 50%;
     margin-right: 20px;
 }
+
 /* Estilos para os links de redes sociais */
 .info-item a {
     display: inline-block;
     margin-right: 10px;
 }
+
 .info-item img {
     width: 30px;
     height: 30px;
     vertical-align: middle;
 }
+
 /* Estilos para a caixa do chatbot */
 .chatbot-box {
     background-color: #f9f9f9;
@@ -146,46 +171,56 @@ a:hover {
     margin-bottom: 20px;
     padding: 10px;
 }
+
 .chatbot-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
 }
+
 .chatbot-header h3 {
     margin: 0;
     font-weight: bold;
 }
+
 .chatbot-header button {
     background: none;
     border: none;
     cursor: pointer;
 }
+
 .chatbot-header button i {
     font-size: 1.2em;
 }
+
 .chatbot-content {
     display: none;
     /* Oculta a caixa de chat inicialmente */
 }
+
 .chatbot-messages {
     max-height: 200px;
     overflow-y: auto;
     padding: 10px;
 }
+
 .chat-message {
     margin-bottom: 5px;
     padding: 10px;
     border-radius: 5px;
 }
+
 .user {
     background-color: #e9e9e9;
     text-align: right;
 }
+
 .chatbot {
     background-color: #e0f2f7;
     text-align: left;
 }
+
 #chatbot-input {
     width: calc(100% - 90px);
     /* Ajusta a largura do input */
@@ -194,13 +229,16 @@ a:hover {
     border-radius: 5px;
     margin-top: 10px;
 }
+
 #chatbot-input::placeholder {
     color: #999;
 }
+
 #chatbot-input:focus {
     outline: none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
+
 #enviar {
     width: 80px;
     /* Ajusta a largura do botão */
@@ -214,13 +252,16 @@ a:hover {
     margin-left: 10px;
     /* Adiciona um espaço à esquerda do botão */
 }
+
 #enviar:hover {
     opacity: 0.8;
 }
+
 /* Estilos para a seção de projetos */
 #projects-section {
     margin-bottom: 30px;
 }
+
 .project {
     margin-bottom: 20px;
     padding: 10px;
@@ -228,44 +269,53 @@ a:hover {
     border-radius: 5px;
     background-color: #f9f9f9;
 }
+
 .project h3 {
     margin-bottom: 5px;
     font-weight: bold;
     color: #007bff;
 }
+
 .project-details {
     margin-top: 10px;
     display: none;
 }
+
 .project-details p {
     margin-bottom: 5px;
 }
+
 .project-details a {
     display: block;
     margin-top: 5px;
     color: #007bff;
     text-decoration: none;
 }
+
 .project-details a:hover {
     text-decoration: underline;
 }
+
 .project-details img {
     width: 100%;
     max-height: 200px;
     margin-top: 10px;
     object-fit: cover;
 }
+
 .quick-links {
     display: flex;
     gap: 10px;
     margin-bottom: 10px;
 }
+
 .quick-links a {
     display: flex;
     align-items: center;
     text-decoration: none;
     color: #007bff;
 }
+
 .quick-links img {
     width: 30px;
     height: 30px;
@@ -274,18 +324,23 @@ a:hover {
 
 #project-2-details img {
     object-fit: contain;
-    width: 100%; /* Imagem ocupa 100% da largura do container */
-    max-width: 500px; /* Largura máxima da imagem */
-    height: auto; /* Ajusta altura automaticamente */
-  }
+    width: 100%;
+    /* Imagem ocupa 100% da largura do container */
+    max-width: 500px;
+    /* Largura máxima da imagem */
+    height: auto;
+    /* Ajusta altura automaticamente */
+}
 
 
 
-  /* Estilos do Formulário de Contato */
+/* Estilos do Formulário de Contato */
 #contato form {
-    max-width: 300px; /* Largura máxima do formulário */
-    margin: 30px auto; /* Centraliza o formulário */
-    padding: 20px; 
+    max-width: 300px;
+    /* Largura máxima do formulário */
+    margin: 30px auto;
+    /* Centraliza o formulário */
+    padding: 20px;
     border: 1px solid #dddddd;
     border-radius: 5px;
 }
@@ -294,100 +349,118 @@ a:hover {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    text-align: left; /* Alinhamento à esquerda */
+    text-align: left;
+    /* Alinhamento à esquerda */
 }
 
 #contato input[type="text"],
 #contato input[type="email"],
 #contato textarea {
     width: 100%;
-    padding: 10px; /* Aumenta o padding dos inputs */
-    margin-bottom: 15px; /* Margem inferior para espaçamento */
+    padding: 10px;
+    /* Aumenta o padding dos inputs */
+    margin-bottom: 15px;
+    /* Margem inferior para espaçamento */
     border: 1px solid #ccc;
-    border-radius: 3px; /* Bordas arredondadas */
-    box-sizing: border-box; 
+    border-radius: 3px;
+    /* Bordas arredondadas */
+    box-sizing: border-box;
 }
 
 #contato input[type="text"]:focus,
 #contato input[type="email"]:focus,
 #contato textarea:focus {
-    outline: none; 
-    border-color: #007bff; /* Cor de destaque no foco */ 
+    outline: none;
+    border-color: #007bff;
+    /* Cor de destaque no foco */
 }
 
 #contato textarea {
-    height: 120px; /* Altura da área de texto */
+    height: 120px;
+    /* Altura da área de texto */
 }
 
 /* Botão de Envio */
 #contato button[type="submit"] {
-    background-color: #007bff; /* Cor de fundo do botão */
+    background-color: #007bff;
+    /* Cor de fundo do botão */
     color: white;
     padding: 12px 20px;
     border: none;
-    border-radius: 3px; /* Bordas arredondadas */
+    border-radius: 3px;
+    /* Bordas arredondadas */
     cursor: pointer;
 }
 
 #contato button[type="submit"]:hover {
-    background-color: #0056b3; /* Cor de fundo no hover */
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra no hover */
+    background-color: #0056b3;
+    /* Cor de fundo no hover */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    /* Sombra no hover */
 }
 
 /* Estilos para telas maiores (desktops) */
 @media (min-width: 768px) {
-  nav ul li {
-    display: inline;
-    margin: 0 1rem;
-  }
+    nav ul li {
+        display: inline;
+        margin: 0 1rem;
+    }
 
-  .projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
-  .project {
-    width: 48%;
-    margin-bottom: 20px;
-  }
+    .project {
+        width: 48%;
+        margin-bottom: 20px;
+    }
 }
 
 /* Estilos para tablets */
 @media (max-width: 768px) {
-  nav ul li {
-    display: block; /* Empilha itens do menu */
-    margin: 10px 0;
-  }
+    nav ul li {
+        display: block;
+        /* Empilha itens do menu */
+        margin: 10px 0;
+    }
 
-  .project {
-    width: 100%; /* Projetos ocupam 100% da largura */
-    margin-bottom: 20px;
-  }
+    .project {
+        width: 100%;
+        /* Projetos ocupam 100% da largura */
+        margin-bottom: 20px;
+    }
 }
 
 /* Estilos para celulares */
 @media (max-width: 480px) {
-  .project-details {
-    font-size: 14px; /* Diminui o tamanho da fonte */
-  }
+    .project-details {
+        font-size: 14px;
+        /* Diminui o tamanho da fonte */
+    }
 }
 
 :root {
-  --background-color: #f4f4f4; /* Cor de fundo padrão (modo claro) */
-  --text-color: #333; /* Cor do texto padrão (modo claro) */
-  --primary-color: #007bff; /* Cor primária do site */
+    --background-color: #f4f4f4;
+    /* Cor de fundo padrão (modo claro) */
+    --text-color: #333;
+    /* Cor do texto padrão (modo claro) */
+    --primary-color: #007bff;
+    /* Cor primária do site */
 }
 
 .dark-mode {
-    --background-color: #333; /* Cor de fundo no modo escuro */
-    --text-color: #fff; /* Cor do texto no modo escuro */
-  }
+    --background-color: #333;
+    /* Cor de fundo no modo escuro */
+    --text-color: #fff;
+    /* Cor do texto no modo escuro */
+}
 
 
-  /* introdução */
+/* introdução */
 
-  html,
+html,
 body {
     margin: 0;
     overflow: hidden;
