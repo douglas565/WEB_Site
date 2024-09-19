@@ -1,5 +1,3 @@
-// Define o caminho para o script do Python
-const chatbotEndpoint = 'http://localhost:5001/chatbot';
 
 // Objeto com as traduções
 const translations = {
