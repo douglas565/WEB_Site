@@ -231,18 +231,3 @@ darkModeToggle.addEventListener('click', () => {
   }
 });
 
-// Verifica a preferência ao carregar a página
-if (localStorage.getItem('darkMode') === 'enabled') {
-  body.classList.add('dark-mode');
-}
-
-const intro = document.getElementById('intro');
-let clickCount = 0;
-
-document.addEventListener('click', function() {
-  clickCount++;
-  if (clickCount >= 2) {
-    intro.classList.add('slideUp');
-    clickCount = 0; // Reinicia o contador
-  }
-});
