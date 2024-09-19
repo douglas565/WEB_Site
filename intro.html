@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introdução</title>
     <link rel="stylesheet" href="style.css">
+    <title>Introdução</title>
 </head>
 <body>
-    <div class="container">
-        <a href="#" style="--clr:#ff22bb; --i:0" id="enter-button">
-          <span>Entrar no Site</span>
-        </a>
-    </div>
+    <div id="space-container"></div>
+    <div id="space-container-top"></div>
+    <img class="cosmos center" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1037366/cosmos.png" />    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/86/three.min.js"></script>
+    <script src="intro.js"></script>
+
     <script>
-        document.getElementById("enter-button").addEventListener("click", function() {
-            window.location.href = "index.html"; 
-        });
+        // Redireciona para index.html após 5 segundos (5000 milissegundos)
+        setTimeout(function() {
+            window.location.href = "index.html";
+        }, 5000);
     </script>
 </body>
 </html>
