@@ -458,19 +458,3 @@ a:hover {
 }
 
 
-@media (max-width: 768px) {
-  .inicio {
-    display: flex;
-    flex-direction: column; /* Alinha itens em coluna */
-    justify-content: center; /* Centraliza verticalmente */
-    align-items: center;    /* Centraliza horizontalmente */
-    height: 100vh;          /* Garante que a seção ocupe a altura da tela */
-  }
-
-  .inicio .links {
-    display: flex;
-    flex-direction: column; /* Links em coluna */
-    gap: 10px;             /* Espaçamento entre links */
-  }
-}/* introdução c/
-
