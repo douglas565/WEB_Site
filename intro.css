@@ -2,12 +2,19 @@ html, body {
   margin: 0; 
   overflow: hidden;
 }
+
+body {
+  background-color: #222; /* Define a cor de fundo para cinza escuro */
+}
+
+
 #space-container-top {
   opacity: 0.6;
   position: absolute;
   top: 0;
   z-index: 10;
 }
+
 img.cosmos {
   position: absolute;
   z-index: 20;
@@ -19,4 +26,6 @@ img.cosmos {
   right: 0;
 }
 
-
+h1 {
+  color: #fff; /* Define a cor do texto do h1 para branco */
+}
