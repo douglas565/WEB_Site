@@ -113,8 +113,8 @@ const translations = {
     'projects-title-en': 'Projects',
     'project-1-descri1-pt-br': '<p>Eu desenvolvi código em C apresenta a implementação de um jogo de cartas estratégico e tático, onde dois jogadores se enfrentam em uma série de rodadas. Cada jogador recebe uma mão de cartas de um baralho que inclui cartas de diferentes cores e valores. O <strong>objetivo</strong> é vencer as rodadas acumulando pontos, que são determinados pelo resultado de combates entre as cartas jogadas pelos jogadores.</p>',
     'project-1-descri1-en': '<p>I developed code in C that implements a strategic and tactical card game, where two players face each other in a series of rounds. Each player receives a hand of cards from a deck that includes cards of different colors and values. The <strong>goal</strong> is to win the rounds by accumulating points, which are determined by the result of battles between the cards played by the players.</p>',
-    'project-1-descri2-pt-br': '<p>Este projeto foi desenvolvido como parte do curso de Algoritmos e Estruturas de Dados da UNISUL, com o objetivo de aplicar conceitos de programação e lógica de programação em um projeto prático e divertido. O jogo foi implementado em C, uma linguagem de programação de baixo nível que permite um controle preciso dos recursos do sistema.</p>',
-    'project-1-descri2-en': '<p>This project was developed as part of the Algorithms and Data Structures course at UNISUL, with the aim of applying programming concepts and logic to a practical and fun project. The game was implemented in C, a low-level programming language that allows precise control of system resources.</p>',
+    'project-1-descri2-pt-br': '<p>Este projeto foi desenvolvido como parte do curso de Algoritmos e Estruturas de Dados da UFSM em Sistemas de Informação, com o objetivo de aplicar conceitos de programação e lógica de programação em um projeto prático e divertido. O jogo foi implementado em C, uma linguagem de programação de baixo nível que permite um controle preciso dos recursos do sistema.</p>',
+    'project-1-descri2-en': '<p>This project was developed as part of the Algorithms and Data Structures course at UFSM in Information Systems, with the goal of applying programming concepts and logic to a practical and fun project. The game was implemented in C, a low-level programming language that allows precise control of system resources.</p>',
     'project-1-technologies-pt-BR': 'Tecnologias usadas: C.',
     'project-1-technologies-en': 'Technologies used: C.',
     'project-1-github-text-pt-BR': 'Para saber mais acesse o link para o Código-fonte no GitHub',
@@ -228,4 +228,3 @@ darkModeToggle.addEventListener('click', () => {
     localStorage.setItem('darkMode', 'disabled');
   }
 });
-
