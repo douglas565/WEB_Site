@@ -2,8 +2,8 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: var(--background-color);
+  color: var(--text-color);
     line-height: 1.6;
 }
 .container {
@@ -372,3 +372,14 @@ a:hover {
     font-size: 14px; /* Diminui o tamanho da fonte */
   }
 }
+
+:root {
+  --background-color: #f4f4f4; /* Cor de fundo padrão (modo claro) */
+  --text-color: #333; /* Cor do texto padrão (modo claro) */
+  --primary-color: #007bff; /* Cor primária do site */
+}
+
+.dark-mode {
+    --background-color: #333; /* Cor de fundo no modo escuro */
+    --text-color: #fff; /* Cor do texto no modo escuro */
+  }

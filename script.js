@@ -218,3 +218,20 @@ function toggleProjectDetails(projectId) {
         icon.classList.add('fa-angle-down');
     }
 }
+
+
+darkModeToggle.addEventListener('click', () => {
+  body.classList.toggle('dark-mode');
+
+  // Salva a preferência no localStorage
+  if (body.classList.contains('dark-mode')) {
+    localStorage.setItem('darkMode', 'enabled');
+  } else {
+    localStorage.setItem('darkMode', 'disabled');
+  }
+});
+
+// Verifica a preferência ao carregar a página
+if (localStorage.getItem('darkMode') === 'enabled') {
+  body.classList.add('dark-mode');
+}
